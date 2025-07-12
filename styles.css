@@ -1,8 +1,10 @@
+/* ========================
+   GLOBAL STYLES
+======================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -12,392 +14,261 @@ body {
   line-height: 1;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+/* ========================
+   HEADER
+======================== */
 header {
   padding: 1rem;
   text-align: center;
   background-color: cadetblue;
   color: white;
   line-height: 30px;
-
 }
 
-header image{
+#logo {
+  width: 11%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
-  height:2px;
-  display:inline-block;
+/* ========================
+   NAVIGATION BAR
+======================== */
+nav {
+  width: 100%;
+  background-color: #444;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   list-style: none;
-  background: #444;
+  margin: 0;
   padding: 1rem;
+  width: 100%;
 }
 
 nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li {
-  color: antiquewhite;
-  text-decoration: none;
-}
-
-footer {
-  padding: 10px;
+  margin: 0.5rem 1rem;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgray;
+  border-radius: 5px;
+  color: black;
   text-align: center;
-  background-color: cadetblue;
-  color: white;
-  
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-img {
-width: 100%;
-height: 100%;
-margin:0%;
-padding-top: 10px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom:10px;
+nav ul li:hover {
+  color: antiquewhite;
 }
 
-.link{
-  font-size: 40px;
-  transition: color 0.5s;
-
-  
-
+/* ========================
+   SECTIONS
+======================== */
+section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
 }
 
-.link:hover {
-
-  color:#333333;
+/* ========================
+   POPUP OVERLAY
+======================== */
+.popup-overlay {
+  background-color: black;
+  width: 100%;
+  height: 164%;
+  opacity: 0.8;
+  top: 0;
+  position: fixed;
+  display: none;
 }
 
-.popup-overlay{
-
-    background-color: black;
-    width: 100%;
-    height: 164%;
-    opacity: 0.8;
-    top: 0%;
-    position: fixed;
-    display: none;
-    
-}
-
-.skill{
-
-
-  line-height: 20px;
-  background-color:burlywood;
+/* ========================
+   SKILLS SECTION
+======================== */
+.skill {
+  background-color: burlywood;
   padding: 30px;
   position: absolute;
   left: 30%;
   top: 15%;
   width: 40%;
-  color:black;
-  display:none;
+  color: black;
+  display: none;
   border-radius: 20px;
   font-size: 18px;
+  line-height: 20px;
 }
 
-.have{
-
+.have {
   text-align: center;
   font-size: 20px;
   border-bottom: 4px solid white;
   padding: 10px;
   margin-bottom: 30px;
-  
-  
 }
 
-
-.about{
-
-  width:40%;
+/* ========================
+   ABOUT SECTION
+======================== */
+.about {
   background-color: burlywood;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  font-style:normal;
   color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: center;
+  padding: 10px 20px;
   position: absolute;
-  left:30%;
+  left: 30%;
   top: 15%;
-  width:40%;
+  width: 40%;
   line-height: 30px;
   border-radius: 20px;
   display: none;
 }
 
-.full{
+.full {
   text-align: center;
   font-size: 20px;
   color: black;
   border-bottom: 4px solid white;
   width: 100%;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 30px;
 }
 
-#cancel-about{
-
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px;
-  margin-left: 40%;
-  color: white;
-  border: none;
-  border-radius: 30px;
-}
-
-#popup-cancel{
-
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px;
-  margin-left: 40%;
-  color: white;
-  border: none;
-  border-radius: 30px;
-}
-
-#show-popup4{
-  margin-right: 40px;
-  width: 6%;
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:darkgray;
-  padding: 3px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-}
-
-#show-popup4:hover{
-
-  color:antiquewhite;
-
-
-}
-
-#show-popup{
-  margin-right: 40px;
-  width: 6%;
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:darkgray;
-  padding: 3px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-}
-
-#show-popup:hover{
-
-  color:antiquewhite;
-}
-
-#show-popup1{
-  margin-right: 40px;
-  width: 6%;
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:darkgray;
-  padding: 3px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-}
-
-#show-popup1:hover{
-
-  color:antiquewhite;
-}
-
-#show-popup3{
-  margin-right: 40px;
-  width: 6%;
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:darkgray;
-  padding: 3px;
-  text-align: center;
-  border-radius: 5px;
-  color: black;
-}
-
-#show-popup3:hover{
-
-  color:antiquewhite;
-}
-
-#logo{
-
-  width: 11%;
-  position: absolute;
-  right: 0%;
-  top: 0px;
-  margin-top: 0px;
-}
-
-.contact{
-  
+/* ========================
+   CONTACT SECTION
+======================== */
+.contact {
   width: 50%;
   color: black;
-  background-color:burlywood;
-  position:absolute;
-  left:30%;
-  top:15%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  height:42% ;
+  background-color: burlywood;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  padding: 10px;
+  height: 42%;
   line-height: 50px;
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size:16px ;
-  display: none;  
-
+  font-size: 16px;
+  display: none;
 }
 
-
-.fa-phone-volume{
-
-  margin-right: 40px;
-  color:#f2f2f2;
-  padding-left: 20px;
-  padding-right:30px;
-  
-}
-
-.fa-envelope {
-
-  margin-right: 40px;
-  padding-left: 20px;
-  padding-right:30px;
-  
-}
-
-.fa-address-card{
-
-  margin-right: 40px;
-  padding-left: 20px;
-  padding-right:30px;
- 
-}
-
-.name{
-
+.name {
   text-align: center;
   font-size: 25px;
-  font-family:'Times New Roman', Times, serif;
-  border-bottom: 3 px solid black;
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 3px solid black;
 }
 
-#cancel-contact{
-
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.fa-phone-volume,
+.fa-envelope,
+.fa-address-card {
+  margin-right: 40px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 30px;
+}
+
+/* ========================
+   PROJECTS SECTION
+======================== */
+.project {
+  background-color: burlywood;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 50%;
+  padding: 10px 20px;
+  color: black;
+  line-height: 30px;
+  border-radius: 20px;
+  display: none;
+}
+
+.my {
+  border-bottom: 4px solid white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.project-li {
+  font-size: 20px;
+}
+
+/* ========================
+   BUTTONS
+======================== */
+#popup-cancel,
+#cancel-about,
+#cancel-contact,
+#cancel-project {
+  background-color: black;
+  padding: 10px 20px;
   margin: 10px;
   margin-left: 40%;
   color: white;
   border: none;
   border-radius: 30px;
-
+  cursor: pointer;
 }
 
- .vertical-line {
-    border-left: 4px solid white;
-    height: 170px;
-    margin: 20px;
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    display: none;
-    transition:color 4s;
-  
-  }
-
-  .vertical-line:hover{
-
-    color: #333333;
-  }
-
-  .project{
-
-    background-color: burlywood;
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    width:50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: black;
-    line-height:30px ;
-    border-radius: 20px;
-    display: none;
-
-  }
-
-  .project-li{
-    font-size: 20px;
-  }
-
-  #cancel-project{
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 10px;
-  margin-left: 40%;
+/* ========================
+   FOOTER
+======================== */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: cadetblue;
   color: white;
-  border: none;
-  border-radius: 30px;
-
-  }
-
-  .my{
-   
-   border-bottom: 4px solid white;
-   text-align: center;
-   padding: 10px;
-   margin-bottom:20px;
-   
-  }
-
-  @media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  .skill, .about, .contact {
-    left: 5%;
-    width: 90%;
-  }
 }
 
+.link {
+  font-size: 40px;
+  color: darkblue;
+  transition: color 0.5s;
+}
 
+.link:hover {
+  color: #333333;
+}
+
+/* ========================
+   VERTICAL LINE (DECORATION)
+======================== */
+.vertical-line {
+  border-left: 4px solid white;
+  height: 170px;
+  margin: 20px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: none;
+}
+
+.vertical-line:hover {
+  color: #333333;
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
 @media (max-width: 768px) {
   header {
     font-size: 14px;
@@ -413,19 +284,11 @@ padding-bottom:10px;
 
   nav ul {
     flex-direction: column;
-    align-items: center;
   }
 
   nav ul li {
-    margin: 0.5rem 0;
     width: 80%;
-    text-align: center;
-  }
-
-  section img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
+    margin: 0.5rem auto;
   }
 
   .skill,
@@ -504,6 +367,3 @@ padding-bottom:10px;
     font-size: 16px !important;
   }
 }
-
-
-
