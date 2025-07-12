@@ -230,21 +230,18 @@ footer {
     margin: 10px auto 0;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;       /* ADD THIS */
-    justify-content: center;   /* ADD THIS */
-    text-align: center;        /* ADD THIS */
+ nav ul {
+    flex-direction: row;         /* FIX: display items in a row */
+    flex-wrap: wrap;             /* allow wrapping on small screens */
+    justify-content: center;
+    text-align: center;
   }
 
- nav ul li {
-  width: auto;
-  padding: 8px 20px;
-  margin: 5px auto;
-  font-size: 16px;
-}
-
-
+  nav ul li {
+    width: auto;                 /* shrink width to content */
+    padding: 8px 15px;
+    margin: 5px;
+  }
   .skill, .about, .contact, .project {
     width: 90%;
     left: 5%;
