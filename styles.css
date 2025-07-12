@@ -237,10 +237,13 @@ footer {
     text-align: center;        /* ADD THIS */
   }
 
-  nav ul li {
-    width: 80%;
-    margin: 0.5rem auto;
-  }
+ nav ul li {
+  width: auto;
+  padding: 8px 20px;
+  margin: 5px auto;
+  font-size: 16px;
+}
+
 
   .skill, .about, .contact, .project {
     width: 90%;
